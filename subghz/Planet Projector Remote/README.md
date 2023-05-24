@@ -12,4 +12,5 @@ Space_bright / Space_dim cycles the different brightness levels of the color clo
 
 
 TO DO:
+
 -Capture and test the functions of the music player and time options
