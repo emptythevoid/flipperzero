@@ -1,5 +1,7 @@
 An incomplete capture of the generic remote signals for a Planet Projector
 
+Flipper detects this as "Princeton 24bit" on 433.92AM
+
 Star_on turns on the projector
 
 Star_off turns off the projector
