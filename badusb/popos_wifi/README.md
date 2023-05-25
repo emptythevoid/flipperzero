@@ -5,3 +5,5 @@ This is done primarily via GUI to avoid needing sudo trying to extract the data 
 Replace <YOUR WEBHOOK HERE> with your own appropriate webhook to capture the data.
   
 Adjust timings as needed. This is purely a proof-of-concept.
+
+IT ONLY EXTRACTS THE PASSPHRASE, NOT THE SSID
