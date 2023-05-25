@@ -2,4 +2,4 @@ A complete capture of a Vizio Remote.
 
 Protocol is NEC
 
-Untested
+Tested successfully on a model E190VA
