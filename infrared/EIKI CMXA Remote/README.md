@@ -7,3 +7,5 @@ Flipper detects the protocol as NECext
 This remote has a built-in mouse cursor. I believe I have a simple capture of it. These functions appear as "Cur_..." buttons.
 
 All other buttons captured as-labeled
+
+Untested.
