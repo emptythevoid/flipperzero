@@ -10,4 +10,4 @@ There is a signal that is sent when these buttons are pressed. This is "Remote_d
 A brief signal is sent (and I believe is sent periodically) immediately after the feet buttons are released (when the remote is picked up).
 This is "Remote_up"
 
-Untested
+Tested successfully on a V700 unit
