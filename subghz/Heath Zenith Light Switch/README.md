@@ -1,6 +1,6 @@
 Full capture of Heath/Zenith remote light switch.
 
-This system operates on a Holtek_HT12X 12 bit static code.
+This system operates on a Holtek_HT12X 12 bit static code, at 310Mhz.
 
 The options for the light are:
 Dim (ends with 2)
