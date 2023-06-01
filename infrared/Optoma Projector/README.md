@@ -1,5 +1,5 @@
 Capture of an Optoma Projector remote. Unable to determine exact model of projector. Unable to test due to the projectopr being non-functional.
 
-Input selector buttons didn't work on the remote. I will update this file if I can get those to work.
+I had difficulty getting reads of the source buttons, so be aware.
 
-Model markings on the remote say HOF04K276D6 20041214
+I also found some hidden buttons when I opened the remote. I have read and labeled those as unknown_1 - 7, and they are in order from top-to-bottom, left-to-right on the remote.

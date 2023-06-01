@@ -102,3 +102,69 @@ type: parsed
 protocol: NECext
 address: 4F 50 00 00
 command: 17 E8 00 00
+# 
+name: Dvi_d
+type: parsed
+protocol: NECext
+address: 4F 50 00 00
+command: 1B E4 00 00
+# 
+name: Composit
+type: parsed
+protocol: NECext
+address: 4F 50 00 00
+command: 1C E3 00 00
+# 
+name: Svideo
+type: parsed
+protocol: NECext
+address: 4F 50 00 00
+command: 1D E2 00 00
+# 
+name: Vga
+type: parsed
+protocol: NECext
+address: 4F 50 00 00
+command: 1E E1 00 00
+# 
+name: Unknown_1
+type: parsed
+protocol: NECext
+address: 4F 50 00 00
+command: 00 FF 00 00
+# 
+name: Unknown_2
+type: parsed
+protocol: NECext
+address: 4F 50 00 00
+command: 01 FE 00 00
+# 
+name: Unknown_3
+type: parsed
+protocol: NECext
+address: 4F 50 00 00
+command: 09 F6 00 00
+# 
+name: Unknown_4
+type: parsed
+protocol: NECext
+address: 4F 50 00 00
+command: 0E F1 00 00
+# 
+name: Unknown_5
+type: parsed
+protocol: NECext
+address: 4F 50 00 00
+command: 18 E7 00 00
+# 
+name: Unknown_6
+type: parsed
+protocol: NECext
+address: 4F 50 00 00
+command: 19 E6 00 00
+# 
+name: Unknown_7
+type: parsed
+protocol: NECext
+address: 4F 50 00 00
+command: 1A E5 00 00
