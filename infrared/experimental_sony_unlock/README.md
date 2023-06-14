@@ -18,7 +18,7 @@ https://www.oneforall.com/en-us/support/faq/urc7955-urc7980-how-can-i-program-mi
 
 00079 - SIRC (A:0x00 C:0x15)
 
-**Procedure for programming a key magic code**
+# Procedure for programming a key magic code
 
 Hold Magic until LED blinks
 
@@ -32,7 +32,7 @@ Enter key magic code
 
 Press the button to assign it to. LED will blink twice.
 
-**Remote Reset**
+# Remote Reset
 
 Hold Magic until LED blinks twice
 
@@ -40,7 +40,7 @@ Enter 981
 
 Wait until TV blinks 4 times
 
-**Observations**
+# Observations
 
 Key Magic functions manually added will persist until they are replaced with different key magic or the remtoe is reset. *Simply entering a new device code will not replace the key magic functions*
 
@@ -52,6 +52,6 @@ DVD set up as code 0741, button 1 (default) = Samsung32 A:0x2D C:0x3B
 
 DVD set up as code 0741, button 1 key magic 00189 = Samsung32 A:0x2D C:0x80
 
-**Resources**
+# Resources
 
 https://www.eliztech.com/remotes/codelists/sony-dvd-codes-for-ofa
