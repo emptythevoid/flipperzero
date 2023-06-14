@@ -52,3 +52,5 @@ DVD set up as code 0741, button 1 (default) = Samsung32 A:0x2D C:0x3B
 
 DVD set up as code 0741, button 1 key magic 00189 = Samsung32 A:0x2D C:0x80
 
+**Resources**
+https://www.eliztech.com/remotes/codelists/sony-dvd-codes-for-ofa
