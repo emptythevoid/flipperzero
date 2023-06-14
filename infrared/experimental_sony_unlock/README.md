@@ -40,3 +40,7 @@ Enter 981
 
 Wait until TV blinks 4 times
 
+**Observations**
+
+Key Magic functions manually added will persist until they are replaced with different key magic or the remtoe is reset. *Simply entering a new device code will not replace the key magic functions*
+
