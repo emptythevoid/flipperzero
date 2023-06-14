@@ -6,7 +6,7 @@ https://www.videohelp.com/dvdhacks/sony-bdp-s5100/12108
 Magic 994 is referred to as "key magic" and allows assigning missing functions to a button.
 https://www.oneforall.com/en-us/support/faq/urc7955-urc7980-how-can-i-program-missing-function-my-smart-control
 
-**Relevant O4A codes:**
+**Relevant O4A codes**
 
 00189 - SIRC (A:0x00 C:0x7F)
 
