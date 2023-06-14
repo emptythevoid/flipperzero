@@ -46,6 +46,8 @@ Key Magic functions manually added will persist until they are replaced with dif
 
 The device that's programmed has an effect on the key magic function that's added.  Examples:
 
+DVD set up as code 1633, button 1 (default) = SIRC20 A:0x093A C:0x00
+
 DVD set up as code 1633, button 1 key magic 00189 = SIRC A:0x00 C:0x7F
 
 DVD set up as code 0741, button 1 (default) = Samsung32 A:0x2D C:0x3B
