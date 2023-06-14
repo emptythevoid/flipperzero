@@ -62,6 +62,16 @@ DVD set up as code 4009, button 1 does nothing. Power = SIRC20 A:0x12FA C:0x15
 
 DVD set up as code 4009, button 1 key magic 00189 = SIRC20 A:0x12FA C:0x7F
 
+DVD set up as code 0772, button 1 (default) = SIRC20 A:0x093A C:0x00
+
+**DVD set up as code 0864, button 1 (default) = SIRC20 A:0x0A7A C:0x2A
+
+**DVD set up as code 0864, button 1 key magic 00189 = SIRC20 A:0x0A7A C:0x7F
+
+1033 = 
+
+
+
 # Resources
 
 https://www.eliztech.com/remotes/codelists/sony-dvd-codes-for-ofa
