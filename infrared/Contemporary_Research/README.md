@@ -1,0 +1,1 @@
+Complete capture of a mysterious "Contemporary Research" remote.  I think this went to a really old, non-digital TV tuner.  All the samples are RAW and of varying number of samples, so I have little confidence this will work. But it's the best I could do.
