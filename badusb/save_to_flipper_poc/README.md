@@ -10,3 +10,5 @@ Run the BadUSB script. As soon as it finishes, hit back twice. There is a config
 to get the Flipper back to normal mode before the Powershell script tries to send the payload.
 
 That's: BadUSB, Run, Wait for 100%, Back, Back
+
+This script has been updated to remove all the safety start-sleep commands.  I do not know if it's possible yet for Powershell to close the serial connection before a large amount of exfiltrated data has been written.
