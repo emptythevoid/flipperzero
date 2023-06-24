@@ -2,7 +2,7 @@ Inspired by this thread: https://forum.flipperzero.one/t/anyway-to-save-files-ba
 
 This proof of concept is for Windows-only.
 
-This is a proof-of-concept BadUSB script that uses inline powershell to enumerate which COM port the Flipper is connected to,
+BadUSB script that uses inline powershell to enumerate which COM port the Flipper is connected to,
 and then use Powershell's serial module to interface with Flipper's CLI and write text data to a specified file.
 
 Note: You have to get your timing correct.  When the Flipper is in BadUSB mode, the CLI is not available. 
