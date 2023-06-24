@@ -7,4 +7,5 @@ Per the manual, Brightness Up/Down will control the brightness when the device i
 Tested fully.
 
 Also works on:
+
 -Vibe e-ssential Color Changing Light (globe-style) from Five Below
