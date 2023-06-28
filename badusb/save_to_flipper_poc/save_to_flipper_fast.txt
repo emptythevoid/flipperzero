@@ -1,5 +1,5 @@
 REM Title: Save To Flipper PoC
-REM Author: emptythevoid
+REM Author: emptythevoid and LupusE
 REM Target: Windows 10 (not tested on Windows 11, yet)
 REM Version: 1.0
 REM Category: PoC
