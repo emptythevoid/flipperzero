@@ -14,3 +14,5 @@ That's: BadUSB, Run, Wait for 100%, Back, Back
 This script has been updated to remove all the safety start-sleep commands.  I do not know if it's possible yet for Powershell to close the serial connection before a large amount of exfiltrated data has been written.
 
 Demo video: https://www.youtube.com/watch?v=8d76Nod0DJE
+
+Credit:  Major thanks to @LupusE for the amazing re-write of the Powershell code!!
