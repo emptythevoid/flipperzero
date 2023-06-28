@@ -1,0 +1,3 @@
+REM Keyboard shortcut to toggle Microphone Mute
+
+ALT A

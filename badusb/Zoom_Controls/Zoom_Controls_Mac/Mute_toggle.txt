@@ -1,0 +1,3 @@
+REM Demo Zoom Mute toggle for MacOS
+
+COMMAND-SHIFT A

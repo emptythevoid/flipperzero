@@ -1,0 +1,3 @@
+REM Keyboard shortcut to toggle the Video Camera
+
+ALT V
