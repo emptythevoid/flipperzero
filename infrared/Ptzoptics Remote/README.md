@@ -7,7 +7,7 @@ For those using firmware that allows them to use the IR Remote app (Apps/Tools/I
 To use them, first place the files Ptz_cam1.ir Ptz_cam2.ir Ptz_cam3.ir Ptz_cam4.ir files on your Flipper into the folder:
 SD Card/infrared/ptzoptics
 
-Next, instideplace cam1.txt cam2.txt cam3.txt and cam4.txt into the folder:
+Next, place cam1.txt cam2.txt cam3.txt and cam4.txt on your Flipper into the folder:
 SD Card/infrared/remote
 
 Controls included are:
