@@ -3,7 +3,7 @@ UP: Up
 DOWN: Down
 LEFT: Left
 RIGHT: Right
-OK: Power
+OK: Reset
 BACK: Back
 UPHOLD: Up
 DOWNHOLD: Down
