@@ -19,3 +19,5 @@ $SPATH is the location on the SD card to store your exfiltrated data. By default
 
 ## Example
 This proof-of-concept stores the output of the Powershell Get-ComputerInfo
+
+There are two payload examples included in the script. One will output to the Powershell console the state of the Flipper (BadUSB/NoFZ) to help you learn how to Back out of the BadUSB application and the timing.  The other payload is without debugging and without a delay if the Flipper is simply disconnected.
