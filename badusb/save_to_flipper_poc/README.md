@@ -1,18 +1,23 @@
 Inspired by this thread: https://forum.flipperzero.one/t/anyway-to-save-files-back-to-the-flipper-using-badusb/2372
 
+Credit: Major credit to @LupusE for taking my original proof-of-concept, running with it, and making a proper example payload!
+
 This proof of concept is for Windows-only.
 
 BadUSB script that uses inline powershell to enumerate which COM port the Flipper is connected to,
 and then use Powershell's serial module to interface with Flipper's CLI and write text data to a specified file in Flipper's SD Card.
 
-Note: You have to get your timing correct.  When the Flipper is in BadUSB mode, the CLI is not available. 
-Run the BadUSB script. As soon as it finishes, hit back twice. There is a configurable time delay (10 seconds)
-to get the Flipper back to normal mode before the Powershell script tries to send the payload.
+## Usage:
+Attach Flipper to computer by USB cable and run the BadUSB script.  When the Flipper shows 100% completion, hit Back enough times to get to the Flipper application list (otherwise it won't save the data) and wait a moment and then remove the Flipper.
 
-That's: BadUSB, Run, Wait for 100%, Back, Back
+## Variables:
+$d is the command who's output you want to exfiltrate to the Flipper's storage. Make sure to include |Out-String  as the last part of the command.
 
-This script has been updated to remove all the safety start-sleep commands.  I do not know if it's possible yet for Powershell to close the serial connection before a large amount of exfiltrated data has been written.
+$BHID and $BPID allow you to specify the Device ID parameters of your Flipper.
 
-Demo video: https://www.youtube.com/watch?v=8d76Nod0DJE
+$SPATH is the location on the SD card to store your exfiltrated data. By default, it saves to /ext/apps_data/exfil_data
+
+
+
 
 Credit:  Major thanks to @LupusE for the amazing re-write of the Powershell code!!
