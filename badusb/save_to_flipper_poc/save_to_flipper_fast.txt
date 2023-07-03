@@ -8,7 +8,13 @@ REM Open Powershell
 DELAY 500
 GUI r
 DELAY 500
+
+REM Optionally run powershell in a hidden window
+REM STRING powershell -w h
+
+REM Comment out the below line if you're using the optional hidden window above
 STRING powershell
+
 DELAY 500
 ENTER
 DELAY 750
