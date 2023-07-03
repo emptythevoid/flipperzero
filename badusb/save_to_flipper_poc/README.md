@@ -16,3 +16,6 @@ $d is the command who's output you want to exfiltrate to the Flipper's storage. 
 $BHID and $BPID allow you to specify the Device ID parameters of your Flipper.
 
 $SPATH is the location on the SD card to store your exfiltrated data. By default, it saves to /ext/apps_data/exfil_data
+
+## Example
+This proof-of-concept stores the output of the Powershell Get-COmputerInfo
