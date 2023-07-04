@@ -1,1 +1,1 @@
-A complete capture of a Bose remote for a DVD/Radio unit. Not sure the exact model.
+A complete capture of a Bose remote for a Bose 3-2-1 Series II DVD home entertainment system
