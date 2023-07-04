@@ -8,4 +8,4 @@ This remote has a built-in mouse cursor. I believe I have a simple capture of it
 
 All other buttons captured as-labeled
 
-Untested.
+7/3/2023: Primary buttons were successfully tested on an EIKI LC-XG210 projector
