@@ -1,4 +1,4 @@
-Ducky scripts for the Flipper to automate the GUI for installing Windows 10.
+Ducky scripts for the Flipper to automate the GUI for installing Windows 10, 22H2
 
 Note: If the timing is wrong, most commands will accidentally turn on voice assistant
 
