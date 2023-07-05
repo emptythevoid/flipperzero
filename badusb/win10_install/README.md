@@ -1,5 +1,9 @@
 Ducky scripts for the Flipper to automate the GUI for installing Windows 10, 22H2
 
+Part 1 handles the intial setup, including removing any existing partitions and letting Windows create a new scheme.
+
+Part 2 handles the rest of the setup. It is configured to *always* click "I don't have internet", as trying to get Ducky Script to select the correct Wifi SSID from the list is unpredictable.
+
 Notes about timing: The script implicitly assumes that your computer is relatively fast with an SSD/NVME drive. If the timing is wrong, most commands will accidentally turn on voice assistant. That said, take care when the account is created. If it goes too quickly, it's possible that your password could be added as a user account!
 
 TODO:
