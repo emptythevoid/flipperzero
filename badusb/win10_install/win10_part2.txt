@@ -1,6 +1,6 @@
 REM Automate second half of Windows 10 install
 
-REM Target: Windows 10 22H2
+REM Target: Windows 10 Pro 22H2
 
 REM Run this at the "Let's start with the region" screen
 
