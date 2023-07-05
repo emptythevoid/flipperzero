@@ -76,7 +76,7 @@ ENTER
 DELAY 100
 REM notice about additional partitions
 ENTER
-DELAY 1000
+DELAY 5000
 REM press Next
 TAB
 TAB
