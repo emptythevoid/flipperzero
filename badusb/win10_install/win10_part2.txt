@@ -24,10 +24,24 @@ REM Add second keyboard layout. Defaults to Skip
 ENTER
 DELAY 5000
 
-REM This assumes NO internet is available. (Need to include alternate block for connecting to a network/wifi)
+REM No internet available, but assume wifi works and detects at least one access point
+REM Need to insert a long delay in case it enumerates Wifi networks
+DELAY 15000
 TAB
+DELAY 100
+TAB
+DELAY 100
+TAB
+DELAY 100
+REM Should be on "I don't have internet"
 ENTER
 DELAY 5000
+
+
+REM No Internet Available, no wifi at all
+REM TAB
+REM ENTER
+REM DELAY 5000
 
 REM Continue with limited setup. Defaults to Connect Now
 TAB
