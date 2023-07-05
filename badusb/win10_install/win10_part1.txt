@@ -1,4 +1,7 @@
 REM Automate the first part of Windows 10 install.
+
+REM Target: Windows 10 22H2
+
 REM Emphasis is on automating the procedure, not efficiency (longer than necessary delays)
 REM Start at the Language selection screen
 
