@@ -3,11 +3,11 @@ Collection of Flipper Zero related things
 
 # Interesting or Obscure things you may find here:
 
+Proof of Concept BadUSB code for saving data back to the Flipper SD card (Windows-only, so far)
+
 SubGhz remote files for a WEN 3410 air filtration system (replacement remote msrp $17)
 
 TOPCON remote file for a vision test machine (untested)
-
-Proof of Concept code for saving data back to the Flipper SD card when using BadUSB (Windows-only, so far)
 
 SubGhz remote files for a Planet Projector
 
