@@ -18,3 +18,5 @@ Remote control files for a PTZoptics camera (replacement remote msrp $29)
 Remote control file for the rear seat DVD player for a 2010 Toyota Sienna
 
 Holtek subghz codes for a Health/Zenith lightswitch and a Westek remote power switch
+
+SubGhz remote for an ATI Wonder II
