@@ -1,4 +1,4 @@
-A complete capture of an ATI Wonder II remote. These are raw captures.
+A complete (I think) capture of an ATI Wonder II remote. These are raw captures.
 
 This device works over SubGhz to a receiver station.  
 
