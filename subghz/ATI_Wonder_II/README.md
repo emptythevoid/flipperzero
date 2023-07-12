@@ -12,6 +12,9 @@ I have included some convenient remote maps, if you're able to sue the Sub-GHz R
 Ati_media:
 Controls Vol Up/Down, Play/Pause, Rew, FF.  No room for a Mute button.
 
+Ati_media_alt: (More useful for Youtube on desktop)
+Fullscreen toggle, Play, Left, Right
+
 Ati_mouse: 
 This remote is almost useless, since it's hard to get the speed captured right for the mouse movement.  The remote layout also doesn't allow a right-click.
 
