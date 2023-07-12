@@ -18,4 +18,5 @@ Fullscreen toggle, Play, Left, Right
 Ati_mouse: 
 This remote is almost useless, since it's hard to get the speed captured right for the mouse movement.  The remote layout also doesn't allow a right-click.
 
-
+Ati_arrows:
+Just a mapping for just the directional arrows and OK button.
