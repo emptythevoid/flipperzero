@@ -2,4 +2,4 @@ This is a complete capture of the generic remote included with a Jinhoo projecto
 
 The Flipper detects the protocol as NEC.
 
-Untested
+Tested on a Jinhoo M10 Projector
