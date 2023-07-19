@@ -1,0 +1,99 @@
+Filetype: IR signals file
+Version: 1
+# 
+name: Power
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 81 00 00 00
+# 
+name: Mute
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 89 00 00 00
+#
+name: 80
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 80 00 00 00
+#
+name: 82
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 82 00 00 00
+#
+name: 83
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 83 00 00 00
+#
+name: 84
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 84 00 00 00
+#
+name: 85
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 85 00 00 00
+#
+name: 86
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 86 00 00 00
+#
+name: 87
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 87 00 00 00
+#
+name: 88
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 88 00 00 00
+#
+name: 8A
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 8A 00 00 00
+#
+name: 8B
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 8B 00 00 00
+#
+name: 8C
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 8C 00 00 00
+#
+name: 8D
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 8D 00 00 00
+#
+name: 8E
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 8E 00 00 00
+#
+name: 8F
+type: parsed
+protocol: NEC
+address: 31 00 00 00
+command: 8F 00 00 00
+#
