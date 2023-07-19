@@ -1,1 +1,1 @@
-Complete capture of an Infocus HW-Navigator-3 remote.  Untested.
+Complete capture of an InFocus HW-Navigator-3 remote.  Tested on an InFocus IN3116
