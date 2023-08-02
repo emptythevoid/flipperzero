@@ -14,7 +14,7 @@ DELAY 100
 
 REM Click Install Now
 ENTER
-DELAY 15000
+DELAY 20000
 
 REM Windows license
 SPACE
