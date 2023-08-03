@@ -1,0 +1,82 @@
+REM Win11 Install part 2  22H2
+
+REM Country or Region
+ENTER
+DELAY 5000
+
+REM Keyboard layout
+ENTER
+DELAY 5000
+
+REM Skip second keyboard layout
+ENTER
+DELAY 5000
+
+REM Connect to Wifi - Choose I don't have Internet
+SHIFT TAB
+SPACE
+DELAY 5000
+
+REM Continue with limited setup
+SHIFT TAB
+SPACE
+DELAY 5000
+
+REM who is going to use this device
+STRING usernamehere
+ENTER
+DELAY 500
+
+REM Password
+STRING passwordgoeshere
+ENTER
+DELAY 500
+STRING passwordgoeshere
+ENTER
+DELAY 500
+
+REM Security Questions
+DOWN
+TAB
+STRING securityanswer1
+ENTER
+DELAY 200
+DOWN
+TAB
+STRING securityanswer2
+ENTER
+DELAY 200
+DOWN
+TAB
+STRING securityanswer3
+ENTER
+DELAY 5000
+
+REM Choose privacy settings
+REM Some extra delays were needed for some reason
+TAB
+TAB
+TAB
+DELAY 100
+SPACE
+DELAY 100
+TAB
+SPACE
+DELAY 100
+TAB
+SPACE
+DELAY 100
+TAB
+SPACE
+DELAY 100
+TAB
+SPACE
+DELAY 100
+TAB
+SPACE
+DELAY 100
+TAB
+TAB
+DELAY 500
+ENTER
+

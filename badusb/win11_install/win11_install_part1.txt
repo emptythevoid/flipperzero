@@ -1,0 +1,86 @@
+REM Handle first phase of Windows 11 installation, 22H2
+
+REM Language, Time, Keyboard
+SHIFT TAB
+ENTER
+DELAY 500
+
+REM Install Now
+ENTER
+
+DELAY 20000
+
+REM License
+SPACE
+ENTER
+DELAY 2000
+
+REM Type of Installation - Custom
+TAB
+ENTER
+DELAY 1000
+
+REM Assume partitions exist adn delete them all
+REM Primary (default)
+TAB
+TAB
+ENTER
+DELAY 500
+LEFT
+ENTER
+DELAY 5000
+
+REM System partition
+SHIFT TAB
+SHIFT TAB
+SHIFT TAB
+SHIFT TAB
+SHIFT TAB
+ENTER
+DELAY 500
+LEFT
+ENTER
+DELAY 5000
+
+REM MSR (reserved)
+DOWN
+SHIFT TAB
+SHIFT TAB
+SHIFT TAB
+SHIFT TAB
+ENTER
+DELAY 500
+LEFT
+ENTER
+DELAY 5000
+
+REM Recovery
+DOWN
+SHIFT TAB
+SHIFT TAB
+SHIFT TAB
+SHIFT TAB
+SHIFT TAB
+ENTER
+DELAY 500
+LEFT
+ENTER
+DELAY 5000
+
+REM New, Next
+SHIFT TAB
+SHIFT TAB
+SHIFT TAB
+SHIFT TAB
+ENTER
+DELAY 500
+TAB
+ENTER
+DELAY 500
+ENTER
+DELAY 10000
+SHIFT TAB
+SHIFT TAB
+ENTER
+
+REM Assume that NO partitions exist.  Use this to set up the layout
