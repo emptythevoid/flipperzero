@@ -5,6 +5,8 @@ Collection of Flipper Zero related things
 
 Proof of Concept BadUSB code for saving data back to the Flipper SD card (Windows-only, so far)
 
+Downgraded, vulnerable (Mousejackable) firmware for compatible Logitech Unifying receivers
+
 SubGhz remote files for a WEN 3410 air filtration system (replacement remote msrp $17)
 
 TOPCON remote file for a vision test machine (untested). Troll your... optometrist? 
