@@ -6,9 +6,13 @@ Credit: Major credit to @LupusE for taking my original proof-of-concept, running
 
 Changes since original proof-of-concept:
 -Increased baud rate from 115200 to 230400 (thanks for the suggestion Caribou!)
+
 -Add capslock flashing to indicate when it's time to exit BadUSB mode
+
 -Starts powershell hidden by default
+
 -Bypasses Windows Terminal and invokes powershell directly
+
 -Fast STRING and slower ALTSTRING versions
 
 Targets Windows 10, 11
