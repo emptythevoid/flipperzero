@@ -14,7 +14,7 @@ Changes since original proof-of-concept:
 
 - Bypasses Windows Terminal and invokes powershell directly
 
-- Fast STRING and slower ALTSTRING versions
+- Fast STRING and slower (but more compatible) ALTSTRING versions
 
 Targets Windows 10, 11
 
