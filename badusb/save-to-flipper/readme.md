@@ -5,6 +5,7 @@ Inspired by this thread: https://forum.flipperzero.one/t/anyway-to-save-files-ba
 Credit: Major credit to @LupusE for taking my original proof-of-concept, running with it, and making a proper example payload!
 
 Changes since original proof-of-concept:
+
 -Increased baud rate from 115200 to 230400 (thanks for the suggestion Caribou!)
 
 -Add capslock flashing to indicate when it's time to exit BadUSB mode
