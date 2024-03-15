@@ -1,4 +1,4 @@
-// Title: Save To Flipper via Serial (adapted to JS)
+// Title: Save Wifi To Flipper via Serial (adapted to JS)
 // Author: emptythevoid and LupusE
 // Credit to Gas Station Hot Dog for improvements in filename generation
 // Target: Windows 10, Windows 11
