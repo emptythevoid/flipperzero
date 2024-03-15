@@ -6,6 +6,10 @@ REM and then to prepend STRING to each line
 REM awk '{print "prefix" $0}' encoded.txt > encoded_string.txt
 REM then copy and paste, then remove the first STRING and replace with $b64="
 
+REM May need to uncomment and adjust per-line delay. Otherwise it may stumble over itself
+REM particularly if the base64 is very large
+REM DEFAULTDELAY 100
+
 REM slow down flipper string entry so keyboard buffer doesn't get broken
 REM not sure if needed or not
 STRING_DELAY 100
