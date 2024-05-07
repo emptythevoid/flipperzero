@@ -55,7 +55,7 @@ DELAY 5000
 REM Choose privacy settings
 REM Some extra delays were needed for some reason
 TAB
-TAB
+DELAY 100
 TAB
 DELAY 100
 SPACE
