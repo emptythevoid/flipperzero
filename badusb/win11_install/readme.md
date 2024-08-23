@@ -8,8 +8,8 @@ Part 1- Handles the initial setup of wiping out any existing partitions, setting
 
 Part 2- Handles the "setup" after install. You need to modify a few things for your setup:
 
- - <your username>
- - <your password>
+ - <yourusername>
+ - <yourpassword>
  - <security 1>
  - <security 2>
  - <security 3>
@@ -17,3 +17,5 @@ Part 2- Handles the "setup" after install. You need to modify a few things for y
 It is highly recommended NOT to have your computer connected to Ethernet when you perform the installation, otherwise it will perform updates and try to make you use a Microsoft account.
 
 If, however, Ethernet is plugged in, Part 2 will release the DHCP IP address before setup.  Once the setup is complete, Flipper will PAUSE and wait for a button press.  Perform this after the computer is safely at the desktop. This will renew the IP configuration.
+
+The OOBE bypass scripts are likely not needed and obsolete.
