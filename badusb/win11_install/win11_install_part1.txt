@@ -1,4 +1,4 @@
-REM Handle first phase of Windows 11 installation, 22H2
+REM Handle first phase of Windows 11 installation, 22H2, 23H2
 
 REM Language, Time, Keyboard
 SHIFT TAB
