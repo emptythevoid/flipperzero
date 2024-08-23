@@ -8,8 +8,8 @@ Part 1- Handles the initial setup of wiping out any existing partitions, setting
 
 Part 2- Handles the "setup" after install. You need to modify a few things for your setup:
 
- - <yourusername>
- - <yourpassword>
+ - <localuser>
+ - <localpwd>
  - <security 1>
  - <security 2>
  - <security 3>
