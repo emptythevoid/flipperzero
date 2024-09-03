@@ -1,4 +1,6 @@
-This script will export the Forticlient configuration on a Windows client.
+This script will export the Forticlient configuration on a Windows client. This serves purely as a proof of concept.
+
+YOU have to decide what to do with it. As-is, it will export to the desktop of a user account named "user." YOU MUST CHANGE THIS!
 
 Note: Exporting the configuration in a normal setup does not require admin privileges.
 
