@@ -1,9 +1,11 @@
 REM Handle first phase of Windows 11 installation, 22H2, 23H2
 
-REM Language, Time, Keyboard
-SHIFT TAB
-ENTER
-DELAY 500
+REM Author: emptythevoid
+
+REM Next
+ALT y
+
+DELAY 100
 
 REM Install Now
 ENTER
@@ -12,75 +14,71 @@ DELAY 20000
 
 REM License
 SPACE
-ENTER
+
+ALT n
 DELAY 2000
 
 REM Type of Installation - Custom
-TAB
-ENTER
+
+ALT c
 DELAY 1000
 
-REM Assume partitions exist adn delete them all
-REM Primary (default)
-TAB
-TAB
-ENTER
-DELAY 500
-LEFT
-ENTER
-DELAY 5000
+REM Delete any and all partitions
+REM should be able to simply repeate this over and over after the fisrt one
+REM as soon as all are gone, the command will trigger the Next button 
+REM and begin installation
 
-REM System partition
-SHIFT TAB
-SHIFT TAB
-SHIFT TAB
-SHIFT TAB
-SHIFT TAB
+ALT d
+DELAY 200
+TAB
 ENTER
-DELAY 500
-LEFT
-ENTER
-DELAY 5000
+DELAY 2000
 
-REM MSR (reserved)
+REM repeat the blocks below for however many partitions you think you'll need to remove
+
 DOWN
-SHIFT TAB
-SHIFT TAB
-SHIFT TAB
-SHIFT TAB
-ENTER
-DELAY 500
-LEFT
-ENTER
-DELAY 5000
-
-REM Recovery
-DOWN
-SHIFT TAB
-SHIFT TAB
-SHIFT TAB
-SHIFT TAB
-SHIFT TAB
-ENTER
-DELAY 500
-LEFT
-ENTER
-DELAY 5000
-
-REM New, Next
-SHIFT TAB
-SHIFT TAB
-SHIFT TAB
-SHIFT TAB
-ENTER
-DELAY 500
+ALT d
+DELAY 200
 TAB
 ENTER
-DELAY 500
-ENTER
-DELAY 10000
-SHIFT TAB
-SHIFT TAB
-ENTER
+DELAY 2000
 
-REM Assume that NO partitions exist.  Use this to set up the layout
+DOWN
+ALT d
+DELAY 200
+TAB
+ENTER
+DELAY 200
+
+DOWN
+ALT d
+DELAY 200
+TAB
+ENTER
+DELAY 2000
+
+DOWN
+ALT d
+DELAY 200
+TAB
+ENTER
+DELAY 2000
+
+DOWN
+ALT d
+DELAY 200
+TAB
+ENTER
+DELAY 2000
+
+REM one up arrow partition removal, for safety
+UP
+ALT d
+DELAY 200
+TAB
+ENTER
+DELAY 2000
+
+
+REM Assume that NO partitions exist.
+ALT n
