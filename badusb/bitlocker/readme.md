@@ -4,7 +4,7 @@ All scripts require the current user to have administrative permissions on Windo
 
 bitlocker_disable.txt -- Immediately suspends Bitlocker on C:. Does not remove it
 
-bitlocker_turn_off.txt -- Turns off Bitlocker abnd begins decryption of C:. When decryption is complete, all key protectors are removed.
+bitlocker_turn_off.txt -- Turns off Bitlocker and begins decryption of C:. When decryption is complete, all key protectors are removed.
 
 bitlocker_encrypt_password.txt:
 
