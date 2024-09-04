@@ -1,5 +1,7 @@
 # Research into manipulating Bitlocker using BadUSB
 
+All scripts require the current user to have administrative permissions on Windows.
+
 bitlocker_disable.txt -- Immediately suspends Bitlocker on C:. Does not remove it
 
 bitlocker_turn_off.txt -- Turns off Bitlocker abnd begins decryption of C:. When decryption is complete, all key protectors are removed.
