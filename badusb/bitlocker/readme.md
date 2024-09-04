@@ -8,7 +8,7 @@ bitlocker_turn_off.txt -- Turns off Bitlocker abnd begins decryption of C:. When
 
 bitlocker_encrypt_password.txt:
 
-    - Uses base64 to dump a registry.pol into Windows to allow tablets (Surface Pro, etc) to have pre-boot authentication enabled. Then perform a gpupdate /force
+    - Uses base64 to dump a registry.pol into Windows to allow tablets (Surface Pro, etc) to have pre-boot authentication enabled. Then perform a gpupdate /force (without this, Bitlocker will fail to enable with just a password when it detects the computer is a tablet, aka "slate")
 
     - If Bitlocker is already enabled, all key protectors are removed
 
