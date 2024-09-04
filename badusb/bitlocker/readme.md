@@ -1,4 +1,4 @@
-Research into manipulating Bitlocker using BadUSB
+# Research into manipulating Bitlocker using BadUSB
 
 bitlocker_disable.txt -- Immediately suspends Bitlocker on C:. Does not remove it
 
