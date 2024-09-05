@@ -1,4 +1,8 @@
-REM Bypass Windows login using Windows boot media
+REM Bypass Windows login using Windows boot media.
+REM This automates the commands used to rename the utilman.exe file to cmd.exe
+
+REM Author: emptythevoid
+
 REM Does not work if C: has full drive encryption enabled
 
 REM Run this when you see the first install screen

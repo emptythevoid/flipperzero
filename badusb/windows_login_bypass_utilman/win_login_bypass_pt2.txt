@@ -1,3 +1,9 @@
+REM Bypass Windows Login - second phase
+
+REM Author: emptythevoid
+
+REM change the net user username and password below as needed
+
 REM Run this immediately at login. Press nothing else on the computer
 
 REM try to wake the screen
