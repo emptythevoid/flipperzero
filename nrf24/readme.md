@@ -22,3 +22,5 @@ If munifying says "CAUTION: According to bootloader version, only signed firmwar
 
 ## Notes:
 9/18/24: New MK520 bundle (mouse M310) not vulnerable.   Dongle using signed firmware
+
+9/18/24: New-in-box R400 not able to be sniffed
