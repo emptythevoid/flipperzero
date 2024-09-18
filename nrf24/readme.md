@@ -31,7 +31,7 @@ MK320 (keyboard/mouse combo)
 
 G700 Gaming Mouse (non-unifying receiver)
 
-Older R800 (not sure firmware/hardware revision)
+Older R800 (not sure firmware/hardware revision. Has an LCD and green laser pointer button.)
 
 ## Notes:
 9/18/24: New MK520 bundle (mouse M310) not vulnerable.   Dongle using signed firmware
