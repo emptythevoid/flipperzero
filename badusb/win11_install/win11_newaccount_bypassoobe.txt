@@ -30,7 +30,7 @@ STRING REG Delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /v Launc
 ENTER
 DELAY 200
 
-REM also here, OOBE  default accountSID  default account sam name
+REM Delete the default pre-setup account from registry
 STRING REG Add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /v DefaultAccountSAMName /t REG_SZ /d "" /f
 ENTER
 DELAY 200
@@ -50,7 +50,7 @@ STRING net localgroup administrators <username> /add
 ENTER
 DELAY 1000
 
-REM disable autologin for default account
+REM disable autologin for default pre-setup account and delete the account entirely
 STRING REG Add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v AutoAdminLogon /t REG_SZ /d "0" /f
 ENTER
 DELAY 500
