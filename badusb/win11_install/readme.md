@@ -1,3 +1,9 @@
+Updated 11/4/24:
+
+Use the win11_newaccount_oobe script during Windows 11 setup. This allows you to bypass the (Microsoft) account creation headache and specify your own local admin user and password.
+
+------------------------
+
 Windows 11 installer helpers.  You must use these with a fresh Windows 11 ISO installer on a USB boot drive.  
 
 These will likely fail to work as expected when the computer is set up with an OEM install.
