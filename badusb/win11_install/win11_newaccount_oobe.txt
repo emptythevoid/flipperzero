@@ -1,0 +1,73 @@
+REM Bypass Windows 11 account creation headaches by editing the registry and creating an admin user manually using OOBE
+
+REM Author: emptythevoid
+
+REM Credit: https://www.reddit.com/r/WindowsHelp/comments/1byuyu6/comment/l1hbqe2/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+
+REM Substitute your new admin username and password in the new account creation and the administrators group addition
+
+SHIFT F10
+DELAY 1000
+
+REM HOLD ALT
+REM DELAY 1000
+REM TAB
+REM DELAY 100
+REM TAB
+REM DELAY 100
+REM RELEASE ALT
+
+CTRL-ALT TAB
+
+DELAY 1000
+RIGHT ARROW
+DELAY 100
+ENTER
+
+REM Turn off OOBE
+DELAY 1000
+STRING REG Delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /v LaunchUserOOBE /f
+ENTER
+DELAY 200
+
+REM also here, OOBE  default accountSID  default account sam name
+STRING REG Add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /v DefaultAccountSAMName /t REG_SZ /d "" /f
+ENTER
+DELAY 200
+STRING REG Add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /v DefaultAccountSID /t REG_SZ /d "" /f
+ENTER
+DELAY 200
+STRING REG Add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /v DefaultAccountAction /t REG_DWORD /d "0" /f
+ENTER
+DELAY 1000
+
+REM add new local admin user (include /y to avoid warning about long passwords)
+STRING net user <username> <password> /add /y
+ENTER
+DELAY 1000
+
+STRING net localgroup administrators <username> /add
+ENTER
+DELAY 1000
+
+REM disable autologin for default account
+STRING REG Add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v AutoAdminLogon /t REG_SZ /d "0" /f
+ENTER
+DELAY 500
+STRING REG Add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v AutoLoginSID /t REG_SZ /d "" /f
+ENTER
+DELAY 500
+STRING REG Add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v DefaultUserName /t REG_SZ /d "" /f
+ENTER
+DELAY 500
+STRING REG Add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v EnableFirstLogonAnimation /t REG_DWORD /d "0" /f
+ENTER
+DELAY 500
+STRING net user /delete defaultuser0
+ENTER
+DELAY 500
+
+REM Simply... Log out.
+DELAY 4000
+STRING shutdown /L
+ENTER
