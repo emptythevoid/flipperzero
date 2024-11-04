@@ -1,4 +1,4 @@
-REM Bypass Windows 11 account creation headaches by editing the registry and creating an admin user manually using OOBE
+REM Bypass Windows 11 account creation headaches by editing the registry and creating a local admin user manually. Skip the OOBE entirely.
 
 REM Author: emptythevoid
 
