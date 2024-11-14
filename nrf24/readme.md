@@ -37,3 +37,5 @@ Older R800 (not sure firmware/hardware revision. Has an LCD and green laser poin
 9/18/24: New MK520 bundle (mouse M310) not vulnerable.   Dongle using signed firmware
 
 9/18/24: New-in-box R400 not able to be sniffed
+
+11/14/24: New-in-box Logitech M185 using dongle "046d:c542 Logitech, Inc. Wireless Receiver" was not detected by 2MBbps or 1 MBps scan. Solaar didn't even detect this as a logitech adapter.
