@@ -1,0 +1,23 @@
+REM Updated Windows 11 24H2 ISO installer script
+REM This script assumes that you ran the pre-install script to clear out disk 0 
+REM so we don't have to navigate deleting each partition
+
+ENTER
+DELAY 1000
+ENTER
+DELAY 1000
+ALT A
+DELAY 1000
+ENTER
+DELAY 10000
+ALT A
+
+REM Wait for disk search to complete
+DELAY 20000
+
+REM create new partition(s)
+ALT N
+DELAY 15000
+
+REM begin install
+ALT I
